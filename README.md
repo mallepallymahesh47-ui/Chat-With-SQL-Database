@@ -50,46 +50,6 @@ chat-with-sql-database/
 
 ---
 
-## Installation
-
-### Prerequisites
-- Python 3.10+
-- [uv](https://github.com/astral-sh/uv) (recommended) or pip
-- Groq API key
-- LangChain API key (for tracing)
-
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd chat-with-sql-database
-   ```
-
-2. **Install dependencies**
-   ```bash
-   uv sync
-   # or
-   pip install langchain langchain-community langchain-groq streamlit python-dotenv sqlalchemy mysql-connector-python
-   ```
-
-3. **Configure environment variables**
-
-   Create a `.env` file in the root directory:
-   ```env
-   GROQ_API_KEY=your_groq_api_key_here
-   LANGCHAIN_API_KEY=your_langchain_api_key_here
-   LANGCHAIN_PROJECT=your_project_name
-   ```
-
-4. **(Optional) Generate sample database**
-   ```bash
-   python sql.py
-   ```
-   This creates `mystudents.db` with 7 student records for testing.
-
----
-
 ## Usage
 
 ### Start the App
